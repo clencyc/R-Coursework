@@ -12,6 +12,17 @@ harmonic_mean <- function(x) {
   return(harmonic_mean)
 }
 
-harminic_result <- harmonic_mean(data)
-cat("Harmonic Mean: ", harminic_result, "\n")
+harmonic_result <- harmonic_mean(data)
+cat("Harmonic Mean: ", harmonic_result, "\n")
 
+geometric_mean <- function(x) {
+  n <- length(x)
+  product <- prod(x)
+  geometric_mean <- product^(1 / n)
+  return(geometric_mean)
+}
+
+
+# Compute geometric mean
+geometric_result <- geometric_mean(data)
+cat("Geometric Mean:", geometric_result, "\n")

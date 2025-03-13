@@ -11,7 +11,7 @@ nums
 
 values <- 1:50
 values
-
+  
 vecx <- c(2,8, 13, 15, 13, 6)
 matx <- matrix(vecx, nrow=3, ncol=2)
 matx
@@ -38,8 +38,5 @@ df <- data.frame(
   Score = c(72, 93, 81, 60)
 )
 df
-
-
-
-
+df.plot()
 
