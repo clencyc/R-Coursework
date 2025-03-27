@@ -22,7 +22,6 @@ geometric_mean <- function(x) {
   return(geometric_mean)
 }
 
-
 # Compute geometric mean
 geometric_result <- geometric_mean(data)
 cat("Geometric Mean:", geometric_result, "\n")

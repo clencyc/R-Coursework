@@ -3,7 +3,6 @@ b <- 20
 c <- a + b
 c
 
-
 vals <- seq(from=1, to=10, length.out=5)
 vals
 nums <- seq(from=1, to=10, by=2)
@@ -39,4 +38,3 @@ df <- data.frame(
 )
 df
 df.plot()
-
