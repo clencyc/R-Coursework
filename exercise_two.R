@@ -7,3 +7,7 @@ apply(matmarks, 1, mean)
 apply(matmarks, 2, mean)
 # highest score in each subject
 apply(matmarks, 2, max)
+
+?rpois()
+?rnorm()
+?rbinom()

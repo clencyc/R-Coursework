@@ -15,11 +15,14 @@ vecx <- c(2,8, 13, 15, 13, 6)
 matx <- matrix(vecx, nrow=3, ncol=2)
 matx
 
+va
+
 matxx <- matrix(vecx, nrow=3, ncol=2, byrow=T)
 matxx
 
 vec1 <- c(6, 8, 3, 5)
 vec2 <- c(10,20,60,90)
+vec1 / vec2
 
 matvec <- cbind(vec1, vec2)
 matvec
