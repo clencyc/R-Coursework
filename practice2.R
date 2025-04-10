@@ -44,6 +44,3 @@ MAD_func <- function(x) {
 
 values <- c(1,3,4,5)
 MAD_func(x=values)
-
-
-

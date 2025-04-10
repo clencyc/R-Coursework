@@ -15,7 +15,6 @@ calculate_bmi(72, 190)
 determine.weight.category <- function(inches, pounds) {
   weight <- pounds * 0.753592
   height <- inches * 0.035
-  bmi <- numeric(i)
   bmi <- weight / height^2
   
   if (bmi < 18.5) {
@@ -30,3 +29,14 @@ determine.weight.category <- function(inches, pounds) {
 }
 
 determine.weight.category(72, 190)
+#output = Normal weight
+
+val <- seq(from=1, to=10, length.out=5)  
+val
+
+val <- seq(from=1, to=10, by=2)
+val
+
+
+val <- 1:50
+val
