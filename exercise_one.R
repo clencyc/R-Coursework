@@ -1,6 +1,6 @@
 
 discount <- function(x) {
-  val <- numeric(length(x))
+  val <- length(x)
   for (i in 1:length(x)) {
     if (x[i] < 50 & x[i] > 0) {
       val[i] <- 0

@@ -44,3 +44,56 @@ MAD_func <- function(x) {
 
 values <- c(1,3,4,5)
 MAD_func(x=values)
+
+
+# Generate data and compute probabilities
+uniform <- runif(1000, -1, 1)
+plot(density(uniform))
+
+
+unif <- punif(0.25, -1, 1)
+unif
+
+unif2 <- qunif(0.625, -1, 1)
+unif2
+
+
+# Generate 1000 samples from a Binomial distribution with size=10 and probability=0.5
+binomial <- rbinom(1000, 10, 0.5)
+# Print the first few results (optional)
+head(binomial)
+# Frequency table of the binomial outcomes
+table(binomial)
+# Histogram with proper breaks from -0.5 to 10.5 so bins center on integers
+hist(binomial, breaks = seq(-0.5, 10.5, 1))
+
+
+hist(binomial, 
+     breaks = seq(-0.5, 10.5, 1), 
+     main = "Binomial Distribution", 
+     xlab = "Number of Successes", 
+     col = "steelblue", 
+     border = "white", 
+     freq = TRUE
+     )
+
+# uniform / normal random distributions
+x <- runif(1000, 1, 1)
+z <- rnorm(1000, 2, 3)
+y <- 10+3*x+z
+y
+
+# poisson randoms
+p <- rpois(1000, 10)
+p
+hist(p, seq(-0.5, max(p)+0.5, 1))
+
+
+# r program that generates 1000 values from. pois(lambda=5), gamma(shape=2, scale=2), exponential(rate=3)
+
+poiss1 <- rpois(1000, 5)
+gamma1 <- rgamma(1000, 2, 2)
+expon <- rexp(1000, 3)
+poiss1
+gamma1
+expon

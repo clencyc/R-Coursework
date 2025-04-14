@@ -23,3 +23,23 @@ f_means <- function(x) {
 
 vals <- c(6,5,2,1,8,15,13,23,18,20)
 f_means(x=vals)
+
+# while loops
+while(TRUE) {
+  print("Hi")
+}
+
+x <- 1
+while(x <= 10) {
+  print(x)
+  x <- x + 1
+}
+
+x <- 0
+while(x <= 6) {
+  x <- x + 1
+  if (x == 3) {
+    next
+  }
+  print(x)
+}
