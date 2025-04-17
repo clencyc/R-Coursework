@@ -2,7 +2,7 @@
 calculate_bmi <- function(inches, pounds) {
   weight <- pounds * 0.753592
   height <- inches * 0.035
-  bmi <- weight / height^2
+  bmi <- weight / (height^2)
   return(bmi)
 }
 
@@ -13,19 +13,19 @@ calculate_bmi(72, 190)
 # using the general standards to categorize people
 # according to their BMI
 determine.weight.category <- function(inches, pounds) {
-  weight <- pounds * 0.753592
-  height <- inches * 0.035
-  bmi <- weight / height^2
+  bmi <- calculate_bmi(inches, pounds)
   
   if (bmi < 18.5) {
-    print("Unnderweight")
+    category <- "Underweight"
   } else if(bmi < 24.9 & bmi >= 18.5) {
-    print("Normal weight")
+    category <- "Normal weight"
   } else if(bmi < 29.9 & bmi >= 25) {
-    print("Overweight")
+    category <- "Overweight"
   } else if(bmi >= 30) {
-    print("obese")
+    category <- "obese"
   }
+  
+  return(category)
 }
 
 determine.weight.category(72, 190)
